@@ -63,6 +63,35 @@ a {
   display: flex;
   gap: 20px;
   color: var(--muted);
+  align-items: center;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+  border-left: 1px solid var(--border);
+  padding-left: 20px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+  color: var(--accent-strong);
+  background: rgba(155, 107, 79, 0.1);
+}
+
+.lang-btn:hover {
+  color: var(--accent-strong);
 }
 
 .hero-content {
